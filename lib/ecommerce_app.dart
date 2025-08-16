@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/core/theme/app_colors.dart';
+import 'package:ecommerce_app/modules/auth/presentation/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 class EcommerceApp extends StatelessWidget {
@@ -14,11 +15,4 @@ class EcommerceApp extends StatelessWidget {
   }
 }
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(child: Scaffold());
-  }
-}
