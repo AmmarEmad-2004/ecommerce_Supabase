@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/core/theme/app_colors.dart';
-import 'package:ecommerce_app/modules/auth/presentation/screens/login_screen.dart';
+import 'package:ecommerce_app/modules/auth/presentation/screens/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 
 class EcommerceApp extends StatelessWidget {
@@ -10,9 +10,7 @@ class EcommerceApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       color: AppColors.kScaffoldColor,
-      home: LoginScreen(),
+      home: SignUpScreen(),
     );
   }
 }
-
-

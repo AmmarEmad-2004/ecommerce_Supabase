@@ -11,7 +11,7 @@ class CustomListTile extends StatelessWidget {
       contentPadding: EdgeInsets.zero,
       leading: Text(
         leadingText,
-        style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900),
       ),
       trailing: Container(
         padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),

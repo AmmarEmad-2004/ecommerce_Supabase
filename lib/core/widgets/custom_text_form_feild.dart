@@ -27,7 +27,7 @@ class CustomTextFormFeild extends StatelessWidget {
         hintText: hint,
         hintStyle: TextStyle(
           color: AppColors.kBordersideColor,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w900,
         ),
         border: border(),
         focusedBorder: border(),
@@ -39,7 +39,7 @@ class CustomTextFormFeild extends StatelessWidget {
   OutlineInputBorder border() {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(10),
-      borderSide: BorderSide(color: AppColors.kBordersideColor, width: 3),
+      borderSide: BorderSide(color: AppColors.kBordersideColor, width: 2),
     );
   }
 }
