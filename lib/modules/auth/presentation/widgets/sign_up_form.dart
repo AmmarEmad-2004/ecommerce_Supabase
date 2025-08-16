@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/core/helpers/spaces.dart';
 import 'package:ecommerce_app/core/theme/app_colors.dart';
 import 'package:ecommerce_app/core/widgets/custom_list_tile.dart';
 import 'package:ecommerce_app/core/widgets/custom_text_form_feild.dart';
@@ -11,19 +12,19 @@ class SignUpForm extends StatelessWidget {
     return Column(
       children: [
         CustomTextFormFeild(hint: 'Name'),
-        SizedBox(height: 20),
+        verticalSpace(20),
         CustomTextFormFeild(hint: 'Email'),
-        SizedBox(height: 20),
+        verticalSpace(20),
         CustomTextFormFeild(
           obscureText: true,
           hint: 'Password',
           suffixIcon: Icon(Icons.visibility_off),
         ),
-        SizedBox(height: 20),
+        verticalSpace(20),
 
         CustomListTile(onTap: () {}, leadingText: 'Sign UP'),
         CustomListTile(onTap: () {}, leadingText: 'Sign UP With Google'),
-        SizedBox(height: 20),
+        verticalSpace(20),
         Text.rich(
           TextSpan(
             children: [

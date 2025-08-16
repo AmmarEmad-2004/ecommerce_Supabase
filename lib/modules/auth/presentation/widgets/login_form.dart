@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/core/helpers/spaces.dart';
 import 'package:ecommerce_app/core/theme/app_colors.dart';
 import 'package:ecommerce_app/core/widgets/custom_list_tile.dart';
 import 'package:ecommerce_app/core/widgets/custom_text_button.dart';
@@ -12,19 +13,19 @@ class LoginForm extends StatelessWidget {
     return Column(
       children: [
         CustomTextFormFeild(hint: 'Email'),
-        SizedBox(height: 20),
+        verticalSpace(20),
         CustomTextFormFeild(
           hint: 'Password',
           suffixIcon: Icon(Icons.visibility_off),
         ),
-        SizedBox(height: 20),
+        verticalSpace(20),
         Align(
           alignment: Alignment.centerRight,
           child: CustomTextButton(text: 'Forgot Password?'),
         ),
         CustomListTile(onTap: () {}, leadingText: 'Login'),
         CustomListTile(onTap: () {}, leadingText: 'Login With Google'),
-        SizedBox(height: 20),
+        verticalSpace(20),
         Text.rich(
           TextSpan(
             children: [
