@@ -12,9 +12,14 @@ class LoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CustomTextFormFeild(hint: 'Email'),
+        CustomTextFormFeild(
+          keyboardType: TextInputType.emailAddress,
+          hint: 'Email',
+        ),
         verticalSpace(20),
         CustomTextFormFeild(
+          keyboardType: TextInputType.visiblePassword,
+          obscureText: true,
           hint: 'Password',
           suffixIcon: Icon(Icons.visibility_off),
         ),

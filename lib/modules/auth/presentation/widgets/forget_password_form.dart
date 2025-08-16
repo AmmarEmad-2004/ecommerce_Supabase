@@ -10,7 +10,7 @@ class ForgetPasswordForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CustomTextFormFeild(hint: 'Email'),
+        CustomTextFormFeild(keyboardType: TextInputType.emailAddress,hint: 'Email'),
         verticalSpace(20),
 
         CustomElevatedButton(onPressed: () {}, data: 'Send'),

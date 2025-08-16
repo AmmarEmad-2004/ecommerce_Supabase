@@ -11,11 +11,12 @@ class SignUpForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CustomTextFormFeild(hint: 'Name'),
+        CustomTextFormFeild(keyboardType: TextInputType.name,hint: 'Name'),
         verticalSpace(20),
-        CustomTextFormFeild(hint: 'Email'),
+        CustomTextFormFeild(keyboardType: TextInputType.emailAddress,hint: 'Email'),
         verticalSpace(20),
         CustomTextFormFeild(
+          keyboardType: TextInputType.visiblePassword,
           obscureText: true,
           hint: 'Password',
           suffixIcon: Icon(Icons.visibility_off),
