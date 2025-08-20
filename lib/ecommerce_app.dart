@@ -1,5 +1,5 @@
+import 'package:ecommerce_app/core/routing/app_router.dart';
 import 'package:ecommerce_app/core/theme/app_colors.dart';
-import 'package:ecommerce_app/modules/auth/presentation/screens/forget_password_screen.dart';
 import 'package:flutter/material.dart';
 
 class EcommerceApp extends StatelessWidget {
@@ -7,10 +7,10 @@ class EcommerceApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       color: AppColors.kScaffoldColor,
-      home: ForgetPasswordScreen(),
+      routerConfig: AppRouter.router,
     );
   }
 }
