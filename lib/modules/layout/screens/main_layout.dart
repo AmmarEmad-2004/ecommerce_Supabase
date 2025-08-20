@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/modules/layouts/widgets/custom_nav_bar.dart';
+import 'package:ecommerce_app/modules/layout/widgets/custom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 class MainLayout extends StatelessWidget {

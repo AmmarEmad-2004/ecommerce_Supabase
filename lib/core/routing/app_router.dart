@@ -2,7 +2,7 @@ import 'package:ecommerce_app/core/routing/app_routers.dart';
 import 'package:ecommerce_app/modules/auth/presentation/screens/forget_password_screen.dart';
 import 'package:ecommerce_app/modules/auth/presentation/screens/login_screen.dart';
 import 'package:ecommerce_app/modules/auth/presentation/screens/sign_up_screen.dart';
-import 'package:ecommerce_app/modules/layouts/screens/main_layout.dart';
+import 'package:ecommerce_app/modules/layout/screens/main_layout.dart';
 import 'package:go_router/go_router.dart';
 
 abstract class AppRouter {
