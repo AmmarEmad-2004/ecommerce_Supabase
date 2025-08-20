@@ -10,7 +10,15 @@ class MainLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => NavBarCubit(),
-      child: Scaffold(bottomNavigationBar: CustomNavBar()),
+      child: Scaffold(
+        body: BlocBuilder<NavBarCubit, NavBarState>(
+          builder: (context, state) {
+            var screens = context.read<NavBarCubit>().screens;
+            return screens[state.index];
+          },
+        ),
+        bottomNavigationBar: CustomNavBar(),
+      ),
     );
   }
 }
