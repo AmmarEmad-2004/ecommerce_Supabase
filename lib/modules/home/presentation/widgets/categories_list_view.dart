@@ -15,12 +15,15 @@ class CategoriesListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 60,
+      height: 75,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: categories.length,
         itemBuilder: (context, index) {
-          return CustomCategotyItem(item: categories[index]);
+          return Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: CustomCategotyItem(item: categories[index]),
+          );
         },
       ),
     );
