@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/core/helpers/spaces.dart';
-import 'package:ecommerce_app/core/theme/app_colors.dart';
-import 'package:ecommerce_app/modules/home/presentation/widgets/custom_category_item.dart';
+import 'package:ecommerce_app/modules/home/presentation/widgets/categories_list_view.dart';
+
 import 'package:ecommerce_app/modules/home/presentation/widgets/custom_search_text_feild.dart';
 import 'package:flutter/material.dart';
 
@@ -25,13 +25,10 @@ class HomeScreen extends StatelessWidget {
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
             ),
             verticalSpace(15),
-
-            CustomCategotyItem(),
+            CategoriesListView(),
           ],
         ),
       ),
     );
   }
 }
-
-
