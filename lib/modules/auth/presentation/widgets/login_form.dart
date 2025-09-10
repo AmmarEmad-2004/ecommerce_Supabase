@@ -29,7 +29,12 @@ class LoginForm extends StatelessWidget {
         verticalSpace(20),
         Align(
           alignment: Alignment.centerRight,
-          child: CustomTextButton(text: 'Forgot Password?'),
+          child: CustomTextButton(
+            onTap: () {
+              GoRouter.of(context).push(AppRouters.forgetPassword);
+            },
+            text: 'Forgot Password?',
+          ),
         ),
         CustomListTile(
           onTap: () {
