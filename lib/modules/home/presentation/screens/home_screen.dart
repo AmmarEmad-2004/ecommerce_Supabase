@@ -1,9 +1,5 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ecommerce_app/core/helpers/spaces.dart';
-import 'package:ecommerce_app/core/theme/app_colors.dart';
 import 'package:ecommerce_app/modules/home/presentation/widgets/categories_list_view.dart';
-import 'package:ecommerce_app/modules/home/presentation/widgets/custom_product_card.dart';
-
 import 'package:ecommerce_app/modules/home/presentation/widgets/custom_search_text_feild.dart';
 import 'package:ecommerce_app/modules/home/presentation/widgets/product_list_view.dart';
 import 'package:flutter/material.dart';
