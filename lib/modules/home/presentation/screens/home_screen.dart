@@ -12,7 +12,9 @@ class HomeScreen extends StatelessWidget {
         verticalSpace(20),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: CustomSearchTextFeild(),
+          child: CustomSearchTextFeild(
+            onPressed: () {},
+          ),
         ),
       ],
     );

@@ -18,6 +18,8 @@ class CustomNavBar extends StatelessWidget {
       builder: (context, state) {
         return BottomNavigationBar(
           elevation: 3,
+          type: BottomNavigationBarType.fixed,
+
           backgroundColor: AppColors.kWhiteColor,
           selectedItemColor: AppColors.kPrimaryColor,
           unselectedItemColor: AppColors.kGreyColor,
