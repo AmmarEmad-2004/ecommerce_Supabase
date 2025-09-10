@@ -1,4 +1,6 @@
 import 'package:ecommerce_app/core/helpers/spaces.dart';
+import 'package:ecommerce_app/core/theme/app_colors.dart';
+import 'package:ecommerce_app/modules/home/presentation/widgets/custom_category_item.dart';
 import 'package:ecommerce_app/modules/home/presentation/widgets/custom_search_text_feild.dart';
 import 'package:flutter/material.dart';
 
@@ -7,17 +9,29 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        verticalSpace(20),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: CustomSearchTextFeild(
-            onPressed: () {},
-          ),
+    return SingleChildScrollView(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            verticalSpace(15),
+            CustomSearchTextFeild(onPressed: () {}),
+            verticalSpace(15),
+            Image.asset('assets/images/buy.jpg'),
+            verticalSpace(15),
+            Text(
+              'Popular Categories',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+            ),
+            verticalSpace(15),
+
+            CustomCategotyItem(),
+          ],
         ),
-      ],
+      ),
     );
   }
 }
+
 
