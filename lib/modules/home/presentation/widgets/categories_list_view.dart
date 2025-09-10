@@ -21,7 +21,7 @@ class CategoriesListView extends StatelessWidget {
         itemCount: categories.length,
         itemBuilder: (context, index) {
           return Padding(
-            padding: const EdgeInsets.only(right: 8.0),
+            padding: const EdgeInsets.only(right: 12.0),
             child: CustomCategotyItem(item: categories[index]),
           );
         },
