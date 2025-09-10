@@ -18,7 +18,13 @@ class CustomProductImage extends StatelessWidget {
           child: CachedNetworkImage(
             imageUrl:
                 "https://th.bing.com/th/id/OIP.nsj3P9m7AbD3LhYT6epN2gHaEo?w=267&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-            placeholder: (context, url) => CircularProgressIndicator(),
+            placeholder:
+                (context, url) => Center(
+                  child: SizedBox(
+                    height: 200,
+                    child: Center(child: CircularProgressIndicator()),
+                  ),
+                ),
             errorWidget: (context, url, error) => Icon(Icons.error),
           ),
         ),
