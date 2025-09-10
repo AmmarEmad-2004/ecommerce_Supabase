@@ -7,10 +7,12 @@ class CustomElevatedButton extends StatelessWidget {
     this.onPressed,
     required this.data,
     this.borderRadius = BorderRadius.zero,
+    this.fontSize = 20,
   });
   final Function()? onPressed;
   final String data;
   final BorderRadiusGeometry borderRadius;
+  final double fontSize;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
@@ -23,8 +25,8 @@ class CustomElevatedButton extends StatelessWidget {
         data,
         style: TextStyle(
           color: AppColors.kWhiteColor,
-          fontSize: 20,
-          fontWeight: FontWeight.w900,
+          fontSize: fontSize,
+          fontWeight: FontWeight.w800,
         ),
       ),
     );
