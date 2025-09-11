@@ -1,8 +1,10 @@
 import 'package:ecommerce_app/core/helpers/show_edit_profile_dialog.dart';
 import 'package:ecommerce_app/core/helpers/spaces.dart';
+import 'package:ecommerce_app/core/routing/app_routers.dart';
 import 'package:ecommerce_app/core/theme/app_colors.dart';
 import 'package:ecommerce_app/modules/profile/presentation/widgets/custom_profile_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -41,11 +43,20 @@ class ProfileScreen extends StatelessWidget {
                 ),
                 verticalSpace(8),
                 CustomProfileIcons(
+                  onTap: () {
+                    GoRouter.of(context).push(AppRouters.myOrders);
+                  },
                   title: 'My Orders',
                   icon: Icons.shopping_basket,
                 ),
                 verticalSpace(8),
-                CustomProfileIcons(title: 'Logout', icon: Icons.logout),
+                CustomProfileIcons(
+                  onTap: () {
+                    GoRouter.of(context).pushReplacement(AppRouters.logIn);
+                  },
+                  title: 'Logout',
+                  icon: Icons.logout,
+                ),
               ],
             ),
           ),
