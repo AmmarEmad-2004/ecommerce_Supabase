@@ -3,6 +3,7 @@ import 'package:ecommerce_app/modules/auth/presentation/screens/forget_password_
 import 'package:ecommerce_app/modules/auth/presentation/screens/login_screen.dart';
 import 'package:ecommerce_app/modules/auth/presentation/screens/sign_up_screen.dart';
 import 'package:ecommerce_app/modules/layout/screens/main_layout.dart';
+import 'package:ecommerce_app/modules/profile/presentation/screens/my_orders_screen.dart';
 import 'package:go_router/go_router.dart';
 
 abstract class AppRouter {
@@ -23,6 +24,10 @@ abstract class AppRouter {
       GoRoute(
         path: AppRouters.mainLayout,
         builder: (context, state) => const MainLayout(),
+      ),
+      GoRoute(
+        path: AppRouters.myOrders,
+        builder: (context, state) => const MyOrdersScreen(),
       ),
     ],
   );
