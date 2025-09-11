@@ -5,4 +5,5 @@ abstract class AppRouters {
   static const String signUp = '/SignUpScreen';
   static const String forgetPassword = '/ForgetPasswordScreen';
   static const String mainLayout = '/MainLayout';
+  static const String productDetails = '/ProductDetailsScreen';
 }
