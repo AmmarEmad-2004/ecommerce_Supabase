@@ -26,7 +26,7 @@ class CustomTextFormFeild extends StatelessWidget {
         suffixIcon: suffixIcon,
         hintText: hint,
         hintStyle: TextStyle(
-          color: AppColors.kBordersideColor,
+          color: AppColors.kGreyColor,
           fontWeight: FontWeight.w900,
         ),
         border: border(),
