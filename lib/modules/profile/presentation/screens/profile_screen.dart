@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/core/helpers/show_edit_profile_dialog.dart';
 import 'package:ecommerce_app/core/helpers/spaces.dart';
 import 'package:ecommerce_app/core/theme/app_colors.dart';
 import 'package:ecommerce_app/modules/profile/presentation/widgets/custom_profile_icons.dart';
@@ -31,7 +32,13 @@ class ProfileScreen extends StatelessWidget {
                 ),
                 Text("Ammarzewain@gmail.com", style: TextStyle(fontSize: 20)),
                 verticalSpace(20),
-                CustomProfileIcons(title: 'Edit Name', icon: Icons.person),
+                CustomProfileIcons(
+                  title: 'Edit Name',
+                  icon: Icons.person,
+                  onTap: () {
+                    showEditProfileDialog(context, 'Ammar Emad');
+                  },
+                ),
                 verticalSpace(8),
                 CustomProfileIcons(
                   title: 'My Orders',
@@ -47,5 +54,3 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
-
-
